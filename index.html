@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ömer Terzi — Tarih, Felsefe, Bilim ve İnsan Doğası</title>
+  <meta name="description" content="Tarih, felsefe, bilim ve insan doğasına dair derinlemesine içerikler, analizler ve hikayeler. Ömer Terzi'nin resmi web sitesi.">
+  <meta name="keywords" content="Ömer Terzi, tarih, felsefe, bilim, kişisel gelişim, YouTube, içerik üretici">
+  <meta name="author" content="Ömer Terzi">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ömer Terzi — Tarih, Felsefe, Bilim ve İnsan Doğası">
+  <meta property="og:description" content="Tarih, felsefe, bilim ve insan doğasına dair derinlemesine içerikler, analizler ve hikayeler.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://omerterzi.com">
+  <meta property="og:locale" content="tr_TR">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- ===== MOBILE OVERLAY ===== -->
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="nav-logo">Dr. Ömer Terzi</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Menü">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#hakkimda">Hakkımda</a>
+        <a href="#icerikler">İçerikler</a>
+        <a href="#blog">Blog</a>
+        <a href="#iletisim">İletişim</a>
+        <a href="https://youtube.com/@OmerTerzi" target="_blank" rel="noopener" class="nav-cta">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+          </svg>
+          YouTube
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="assets/images/hero-bg.png" alt="" aria-hidden="true">
+    </div>
+
+    <div class="hero-particles" id="heroParticles"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        İçerik Üretici · YouTuber
+      </div>
+
+      <h1 class="hero-title">
+        Bilginin Işığında <span class="highlight">Keşfet</span>
+      </h1>
+
+      <blockquote class="hero-quote">
+        "Bir şeyi gerçekten bilmek, onu anlatmakla olur."
+      </blockquote>
+      <p class="hero-quote-author">— Socrates</p>
+
+      <p class="hero-subtitle">
+        Tarih, felsefe, bilim ve insan doğasına dair derinlemesine içerikler, analizler ve hikayeler.
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="https://youtube.com/@OmerTerzi" target="_blank" rel="noopener" class="btn btn-primary" id="heroCtaPrimary">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+          </svg>
+          YouTube Kanalına Göz At
+        </a>
+        <a href="#icerikler" class="btn btn-secondary" id="heroCtaSecondary">
+          Öne Çıkan İçerikler
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M7 17l9.2-9.2M17 17V7H7"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-mouse"></div>
+      <span>Keşfet</span>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="section about" id="hakkimda">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <div class="about-image-wrapper">
+            <img src="assets/images/about-photo.jpeg" alt="Ömer Terzi" id="aboutPhoto">
+          </div>
+          <div class="about-image-glow"></div>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-number" data-count="10">0</span>
+              <span class="stat-label">Yıllık Deneyim</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-count="500">0</span>
+              <span class="stat-label">Video İçerik</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-count="50">0</span>
+              <span class="stat-label">Konu Başlığı</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content reveal reveal-delay-2">
+          <span class="section-label">Hakkımda</span>
+          <h2 class="section-title">Merhaba, Ben <span class="highlight">Dr. Ömer Terzi</span></h2>
+          <p class="about-text">
+            Akademisyen, yazar, kurumsal iletişim ve teknoloji uzmanıyım. Yıldız Teknik Üniversitesi ve İstanbul Şehir Üniversitesi gibi saygın kurumlarda gerçekleştirdiğim akademik çalışmaların yanı sıra, 2012 yılından beri dijital mecralarda bilim, kültür, felsefe ve sanat temalarında derinlemesine içerikler üretiyorum.
+          </p>
+          
+          <div class="about-info-grid">
+            <div class="info-item">
+              <span class="info-title">🎓 Eğitim</span>
+              <ul class="info-list">
+                <li><strong>Doktora:</strong> Yıldız Teknik Üniversitesi — Sanat ve Tasarım</li>
+                <li><strong>Yüksek Lisans:</strong> İstanbul Üniversitesi — Siyaset Bilimi ve Kamu Yönetimi</li>
+                <li><strong>Lisans:</strong> Atatürk Üniversitesi — İletişim Fakültesi</li>
+              </ul>
+            </div>
+            
+            <div class="info-item">
+              <span class="info-title">📚 Kitaplar & Eserler</span>
+              <div class="book-card-mini">
+                <div class="book-info">
+                  <div class="book-header">
+                    <strong>"Soru Nasıl Sorulur?"</strong>
+                    <a href="https://www.dr.com.tr/kitap/soru-nasil-sorulur/egitim-basvuru/kisisel-gelisim/urunno=0002055516001?srsltid=AfmBOormA0ig4srkpmM49idNUiWOL-5og8grvkZqlyHRWSuBhoGfDrJi" target="_blank" rel="noopener" class="btn-buy">
+                      Satın Al
+                      <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </a>
+                  </div>
+                  <p>Yediveren Yayınları · Soru sorma sanatının beyin üzerindeki etkilerini ve değişim yaratma gücünü ele alan popüler eseri.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-tags">
+            <span class="tag">📜 Tarih</span>
+            <span class="tag">🧠 Felsefe</span>
+            <span class="tag">🔬 Bilim</span>
+            <span class="tag">🌱 Kişisel Gelişim</span>
+            <span class="tag">🚀 Teknoloji</span>
+            <span class="tag">🌍 Genel Kültür</span>
+          </div>
+          
+          <a href="https://youtube.com/@OmerTerzi" target="_blank" rel="noopener" class="btn btn-secondary" id="aboutCta">
+            Tüm Videoları Keşfet
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURED VIDEOS SECTION ===== -->
+  <section class="section featured" id="icerikler">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Öne Çıkan İçerikler</span>
+        <h2 class="section-title">En Popüler Videolar</h2>
+        <p class="section-description">Tarihten felsefeye, bilimden kişisel gelişime kadar en çok izlenen ve beğenilen içerikler.</p>
+      </div>
+
+      <div class="filter-tabs reveal reveal-delay-1">
+        <button class="filter-tab active" data-filter="all" id="filterAll">Tümü</button>
+        <button class="filter-tab" data-filter="tarih" id="filterTarih">Tarih & Gizemler</button>
+        <button class="filter-tab" data-filter="psikoloji" id="filterPsikoloji">Psikoloji</button>
+        <button class="filter-tab" data-filter="teknoloji" id="filterTeknoloji">Teknoloji</button>
+        <button class="filter-tab" data-filter="felsefe" id="filterFelsefe">Felsefe</button>
+      </div>
+
+      <div class="video-grid" id="videoGrid">
+        <!-- Card 1 -->
+        <a href="https://www.youtube.com/watch?v=2z2KmnfYhRE" target="_blank" rel="noopener" class="video-card reveal reveal-delay-1" data-category="tarih">
+          <div class="video-card-thumb">
+            <img src="assets/images/thumb-1.png" alt="Babil'in Asma Bahçeleri">
+            <div class="video-card-overlay">
+              <div class="play-btn">
+                <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+              </div>
+            </div>
+            <span class="video-card-category category-tarih">Tarih</span>
+          </div>
+          <div class="video-card-info">
+            <h3 class="video-card-title">Babil'in Asma Bahçeleri: Gerçek mi, Efsane mi?</h3>
+            <p class="video-card-desc">Antik dünyanın yedi harikasından biri olan Asma Bahçeleri'nin arkasındaki gizemli hikaye ve arkeolojik bulgular.</p>
+            <div class="video-card-meta">
+              <span class="meta-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                18:24
+              </span>
+              <span class="meta-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                1.2M izlenme
+              </span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 2 -->
+        <a href="https://www.youtube.com/watch?v=aUbJS8gX06I" target="_blank" rel="noopener" class="video-card reveal reveal-delay-2" data-category="psikoloji">
+          <div class="video-card-thumb">
+            <img src="assets/images/thumb-2.png" alt="Ters Çaba Kuralı">
+            <div class="video-card-overlay">
+              <div class="play-btn">
+                <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+              </div>
+            </div>
+            <span class="video-card-category category-psikoloji">Psikoloji</span>
+          </div>
+          <div class="video-card-info">
+            <h3 class="video-card-title">Ters Çaba Kuralı: Daha Az Denemek Neden İşe Yarar?</h3>
+            <p class="video-card-desc">Alan Watts'ın paradoksal felsefesi ve modern psikolojinin bu kurala bakışı.</p>
+            <div class="video-card-meta">
+              <span class="meta-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                22:15
+              </span>
+              <span class="meta-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                890K izlenme
+              </span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 3 -->
+        <a href="https://www.youtube.com/watch?v=4prDsQ0AAuM" target="_blank" rel="noopener" class="video-card reveal reveal-delay-3" data-category="tarih">
+          <div class="video-card-thumb">
+            <img src="assets/images/thumb-3.png" alt="Estonya Feribotu Sendromu">
+            <div class="video-card-overlay">
+              <div class="play-btn">
+                <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+              </div>
+            </div>
+            <span class="video-card-category category-tarih">Tarih</span>
+          </div>
+          <div class="video-card-info">
+            <h3 class="video-card-title">Estonya Feribotu Sendromu: Baltık'ın En Karanlık Gecesi</h3>
+            <p class="video-card-desc">852 kişinin hayatını kaybettiği trajedi ve hâlâ yanıtlanmamış sorular.</p>
+            <div class="video-card-meta">
+              <span class="meta-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                25:30
+              </span>
+              <span class="meta-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                750K izlenme
+              </span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 4 -->
+        <a href="https://www.youtube.com/watch?v=VP_hKnIVWhI" target="_blank" rel="noopener" class="video-card reveal reveal-delay-1" data-category="teknoloji">
+          <div class="video-card-thumb">
+            <img src="assets/images/thumb-4.png" alt="Sihirli Avatarlar">
+            <div class="video-card-overlay">
+              <div class="play-btn">
+                <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+              </div>
+            </div>
+            <span class="video-card-category category-teknoloji">Teknoloji</span>
+          </div>
+          <div class="video-card-info">
+            <h3 class="video-card-title">Sihirli Avatarlar: Yapay Zekanın Yeni Yüzü</h3>
+            <p class="video-card-desc">Dijital ikizler, deepfake teknolojisi ve geleceğin iletişim biçimleri.</p>
+            <div class="video-card-meta">
+              <span class="meta-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                19:45
+              </span>
+              <span class="meta-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                620K izlenme
+              </span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 5 -->
+        <a href="https://www.youtube.com/watch?v=mw1S_8bihgY" target="_blank" rel="noopener" class="video-card reveal reveal-delay-2" data-category="felsefe">
+          <div class="video-card-thumb">
+            <img src="assets/images/thumb-5.png" alt="Büyük Düşünürlerin Hepsi Ateist Mi?">
+            <div class="video-card-overlay">
+              <div class="play-btn">
+                <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+              </div>
+            </div>
+            <span class="video-card-category category-felsefe">Felsefe</span>
+          </div>
+          <div class="video-card-info">
+            <h3 class="video-card-title">Büyük Düşünürlerin Hepsi Ateist Mi?</h3>
+            <p class="video-card-desc">Spinoza, Descartes, Kant ve diğer büyük filozofların inanç ve tanrı kavramına yaklaşımları.</p>
+            <div class="video-card-meta">
+              <span class="meta-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                12:45
+              </span>
+              <span class="meta-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                450K izlenme
+              </span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 6 -->
+        <a href="https://www.youtube.com/watch?v=ZiaA3GANnRU" target="_blank" rel="noopener" class="video-card reveal reveal-delay-3" data-category="psikoloji">
+          <div class="video-card-thumb">
+            <img src="assets/images/thumb-6.png" alt="Neden Erteliyoruz">
+            <div class="video-card-overlay">
+              <div class="play-btn">
+                <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+              </div>
+            </div>
+            <span class="video-card-category category-psikoloji">Psikoloji</span>
+          </div>
+          <div class="video-card-info">
+            <h3 class="video-card-title">Neden Erteliyoruz? Prokrastinasyonun Nörobilimi</h3>
+            <p class="video-card-desc">Beynimiz neden başlamak yerine ertelemeyi seçer? Bilimsel araştırmalar ne diyor?</p>
+            <div class="video-card-meta">
+              <span class="meta-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                16:40
+              </span>
+              <span class="meta-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                1.1M izlenme
+              </span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BLOG SECTION ===== -->
+  <section class="section blog" id="blog">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Blog</span>
+        <h2 class="section-title">Yazılar & Araştırmalar</h2>
+        <p class="section-description">Videolara sığmayan detaylı araştırmalar, düşünceler ve derinlemesine analizler.</p>
+      </div>
+
+      <div class="blog-grid">
+        <!-- Featured Blog Post -->
+        <a href="https://www.damgagazetesi.com/kose-yazisi/196602/gencligi-anlayan-ticaret-yeni-bir-istihdam-modeli" target="_blank" rel="noopener" class="blog-card blog-card-featured reveal" id="blogFeatured">
+          <div class="blog-card-image">
+            <img src="assets/images/blog-1.png" alt="Gençliği Anlayan Ticaret">
+          </div>
+          <div class="blog-card-body">
+            <span class="blog-card-tag">İstihdam & Ekonomi</span>
+            <h3 class="blog-card-title">Gençliği Anlayan Ticaret: Yeni Bir İstihdam Modeli</h3>
+            <p class="blog-card-excerpt">
+              Bugün herkes ticaret yapıyor, ortak hedef kazanmak. Ancak çağımızın en kritik meselesi sadece ekonomi değil; gençlik ve doğru istihdam modelleri yaratmaktır.
+            </p>
+            <div class="blog-card-footer">
+              <span>15 Haziran 2026 · 5 dk okuma</span>
+              <span class="blog-card-read-more">
+                Yazıyı Oku
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Blog Post 2 -->
+        <a href="https://www.damgagazetesi.com/kose-yazisi/196862/cok-simarttik-az-sorguladik" target="_blank" rel="noopener" class="blog-card reveal reveal-delay-2" id="blogPost2">
+          <div class="blog-card-image">
+            <img src="assets/images/blog-2.png" alt="Çok Şımarttık, Az Sorguladık">
+          </div>
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Toplum & Kültür</span>
+            <h3 class="blog-card-title">Çok Şımarttık, Az Sorguladık</h3>
+            <p class="blog-card-excerpt">
+              Günümüz dünyasında sorgulama kültürünün zayıflaması, tüketim alışkanlıkları ve toplumsal değerlerin dönüşümü üzerine eleştirel bir bakış.
+            </p>
+            <div class="blog-card-footer">
+              <span>22 Haziran 2026 · 4 dk</span>
+              <span class="blog-card-read-more">
+                Yazıyı Oku
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Blog Post 3 -->
+        <a href="https://www.damgagazetesi.com/kose-yazisi/196085/bu-tren-kacmamali" target="_blank" rel="noopener" class="blog-card reveal reveal-delay-3" id="blogPost3">
+          <div class="blog-card-image">
+            <img src="assets/images/blog-3.png" alt="Bu Tren Kaçmamalı">
+          </div>
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Demokrasi & Toplum</span>
+            <h3 class="blog-card-title">Bu Tren Kaçmamalı</h3>
+            <p class="blog-card-excerpt">
+              Demokrasi sadece sandıktan çıkan iradeyle ölçülemez. Gerçek demokrasi, herkesin kendini eşit şekilde ifade edebildiği bir düzenle mümkündür.
+            </p>
+            <div class="blog-card-footer">
+              <span>10 Haziran 2026 · 4 dk</span>
+              <span class="blog-card-read-more">
+                Yazıyı Oku
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWSLETTER / CTA SECTION ===== -->
+  <section class="section newsletter" id="newsletter">
+    <div class="container">
+      <div class="newsletter-card reveal">
+        <h2 class="newsletter-title">Yeni İçeriklerden Haberdar Ol</h2>
+        <p class="newsletter-desc">
+          Her hafta tarih, felsefe ve bilim dünyasından ilham veren içerikler doğrudan e-postana gelsin.
+        </p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" class="newsletter-input" placeholder="E-posta adresin" required id="newsletterEmail">
+          <button type="submit" class="newsletter-btn" id="newsletterSubmit">Abone Ol</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="iletisim">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo">Dr. Ömer Terzi</a>
+          <p>
+            Tarih, felsefe, bilim ve insan doğasına dair derinlemesine içerikler, analizler ve hikayeler üreten bir içerik platformu.
+          </p>
+          <div class="footer-social-links">
+            <!-- YouTube -->
+            <a href="https://youtube.com/@OmerTerzi" target="_blank" rel="noopener" class="social-icon" aria-label="YouTube" id="socialYoutube">
+              <svg viewBox="0 0 24 24">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </a>
+            <!-- Instagram -->
+            <a href="https://instagram.com/terziomerr" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram" id="socialInstagram">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+              </svg>
+            </a>
+            <!-- X / Twitter -->
+            <a href="https://x.com/terziomer" target="_blank" rel="noopener" class="social-icon" aria-label="X (Twitter)" id="socialTwitter">
+              <svg viewBox="0 0 24 24">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+            <!-- Facebook -->
+            <a href="https://facebook.com/terziomerr" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook" id="socialFacebook">
+              <svg viewBox="0 0 24 24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <!-- Email -->
+            <a href="mailto:info@omerterzi.com" class="social-icon" aria-label="E-posta" id="socialEmail">
+              <svg viewBox="0 0 24 24">
+                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Hızlı Bağlantılar</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Ana Sayfa</a></li>
+            <li><a href="#hakkimda">Hakkımda</a></li>
+            <li><a href="#icerikler">İçerikler</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#iletisim">İletişim</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Kategoriler</h4>
+          <ul class="footer-links">
+            <li><a href="#">Tarih & Gizemler</a></li>
+            <li><a href="#">Psikoloji & Kişisel Gelişim</a></li>
+            <li><a href="#">Felsefe & Düşünce</a></li>
+            <li><a href="#">Gelecek & Teknoloji</a></li>
+            <li><a href="#">Genel Kültür</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ömer Terzi. Tüm hakları saklıdır.</p>
+        <p>
+          <a href="https://omerterzi.com">omerterzi.com</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script src="script.js"></script>
+</body>
+</html>
