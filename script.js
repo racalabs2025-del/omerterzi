@@ -143,12 +143,17 @@ document.addEventListener('DOMContentLoaded', () => {
       if (targetId === '#') return;
 
       e.preventDefault();
-      const targetEl = document.querySelector(targetId);
-      if (targetEl) {
-        const navHeight = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-height'));
-        const top = targetEl.getBoundingClientRect().top + window.pageYOffset - navHeight;
-        window.scrollTo({ top, behavior: 'smooth' });
-      }
+      
+      // Delay the scroll slightly to allow the mobile menu close animation 
+      // and body overflow unlocking to resolve, avoiding iOS scrolling freezes.
+      setTimeout(() => {
+        const targetEl = document.querySelector(targetId);
+        if (targetEl) {
+          const navHeight = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-height')) || 72;
+          const top = targetEl.getBoundingClientRect().top + window.pageYOffset - navHeight;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      }, 50);
     });
   });
 
