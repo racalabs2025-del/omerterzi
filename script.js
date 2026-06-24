@@ -34,14 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
   menuToggle.addEventListener('click', toggleMenu);
   mobileOverlay.addEventListener('click', toggleMenu);
 
-  // Close menu when clicking a nav link
-  navLinks.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      if (navLinks.classList.contains('open')) {
-        toggleMenu();
-      }
-    });
-  });
+  // Note: Mobile menu closing is now handled in the unified smooth scroll event listener below to ensure perfect timing.
 
 
   // ===== HERO PARTICLES =====
@@ -136,16 +129,24 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
-  // ===== SMOOTH SCROLL FOR ANCHOR LINKS =====
+  // ===== SMOOTH SCROLL & MOBILE NAV LINK HANDLING =====
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       const targetId = this.getAttribute('href');
       if (targetId === '#') return;
 
       e.preventDefault();
+
+      // Check if mobile menu is open and close it first if so
+      const isMenuOpen = navLinks.classList.contains('open');
+      if (isMenuOpen) {
+        toggleMenu(); // Closes menu and sets body overflow back to default
+      }
+
+      // Delay the scroll to allow mobile menu closing animation (300ms) to resolve,
+      // avoiding scroll freezing on iOS Safari. For desktop, execute immediately (0ms).
+      const scrollDelay = isMenuOpen ? 300 : 0;
       
-      // Delay the scroll slightly to allow the mobile menu close animation 
-      // and body overflow unlocking to resolve, avoiding iOS scrolling freezes.
       setTimeout(() => {
         const targetEl = document.querySelector(targetId);
         if (targetEl) {
@@ -153,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
           const top = targetEl.getBoundingClientRect().top + window.pageYOffset - navHeight;
           window.scrollTo({ top, behavior: 'smooth' });
         }
-      }, 50);
+      }, scrollDelay);
     });
   });
 
